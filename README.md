@@ -1,3 +1,3 @@
 - nom : COLLIN
 - prénom : Hugo
-- URL publique du site :
+- URL publique du site : https://tp1-dev-hugo-collin.netlify.app
