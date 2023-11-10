@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" : class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,10 +9,10 @@
     <style>
       .menu {
         position: fixed;
-        top: O;
-        left: O;
+        top: 0;
+        left: 0;
         width: 100vw;
-        height: 100vw;
+        height: 100vh;
         background: #fff;
         display: grid;
         place-content: center;
@@ -32,7 +32,8 @@
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
     <header>
-      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menubtn">menu</button>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+      class="header_menuBtn">menu</button>
       
       <h1>Test de menu</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
@@ -52,5 +53,23 @@
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
+
+<dl x-data= "{ddLorem: false}">
+
+    <dt aria-controls="dd1" @click = "ddLorem = ! ddLorem">Lorem.</dt>
+      <dd x-show="ddLorem" x-transition.duration.500ms>Lorem ipsum dolor sit amet.</dd>
+</dl>
+
+<dl x-data="{ddQuibusdam: false}">
+  <dt aria-controls="dd2" @click = "ddQuibusdam = ! ddQuibusdam">Quisbusdam.</dt>
+    <dd x-show="ddQuibusdam" x-transition.duration.500ms>Tempore asperiores numquam minima inventore.</dd>
+</dl>
+
+<dl>
+<dl x-data="{Omnis: false}">
+  <dt aria-controls="dd3" @click="Omnis = ! Omnis">Omnis.</dt>
+    <dd x-show="Omnis" x-transition.duration.500ms>Vero adipisci laborum expedita odio.</dd>
+</dl>
+   
   </body>
 </html>
