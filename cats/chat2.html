@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test menu</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+      class="header_menuBtn">menu</button>
+      
+      <h1>Les chats noirs</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
+        <ul>
+          <li><a href="cats/indexchat.html">Accueil des chats</a></li>
+          <li><a href="cats/chat1.html">Chat roux</a></li>
+          <li><a href="cats/chat2.html">Chat noir</a></li>
+          <li><a href="chien/Indexchien.html">Accueil des chiens</a></li>
+          <li><a href="chien/chien1.html">Chien noir</a></li>
+          <li><a href="chien/chien2.html">Chien blanc</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<p>La signification de la superstition du chat noir reste assez obscure. Pour autant, il est de coutume de dire, 
+    dans la culture contemporaine française, que croiser un chat noir porte malheur. Certaines coutumes y voient quant à elle un 
+    porte-bonheur : en effet, les chats blancs auraient tous un unique poil blanc, véritable talisman porteur de chance 
+    éternelle à celui qui le détient. Cela étant, la réputation à travers le monde de notre compagnon à quatre pattes est plutôt 
+    celle d'un porteur de mauvais présage. Réincarnation du diable pour certains ou de sorciers pour d'autres, peut-on trouver une 
+    signification crédible au chat noir qui porte malheur ? Les origines de la superstition sont en fait bien plus lointaines 
+    qu'elles n'y paraissent.
+</p>
+<img src="/publics/img/img chat/Chatnoir.png" alt="chats noirs"/>
+<br>
+<img src="/publics/img/img chat/Sleeping_cat_on_her_back.jpg" alt="chats noirs"/>
+
+</body>
+</html>
