@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test menu</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+      class="header_menuBtn">menu</button>
+      
+      <h1>Les chiens noirs</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
+        <ul>
+          <li><a href="cats/indexchat.html">Accueil des chats</a></li>
+          <li><a href="cats/chat1.html">Chat roux</a></li>
+          <li><a href="cats/chat2.html">Chat noir</a></li>
+          <li><a href="chien/Indexchien.html">Accueil des chiens</a></li>
+          <li><a href="chien/chien1.html">Chien noir</a></li>
+          <li><a href="chien/chien2.html">Chien blanc</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<p>
+    Si les chats noirs ont pendant très longtemps souffert d'une mauvaise réputation et ont été durement persécutés, 
+    les chiens noirs n'ont pas eu cette malchance. Pour autant, force est de reconnaître que ce ne sont pas non plus 
+    les plus populaires au sein de la gent canine. Jugés parfois trop sombres ou trop tristes, ils n'attirent pas forcément 
+    les foules.
+    Ils ont pourtant une vraie élégance, et la couleur de leur pelage n'est pas sans avantages - même si elle implique aussi certains 
+    inconvénients.
+    Voici un tour d'horizon des races de chien qui sont toujours noires, ainsi que de quelques autres susceptibles d'arborer 
+    cette couleur.
+</p>
+<img src="/publics/img/img chien/640px-Chien_noir.jpg" alt="chien noir"/>
+<br>
+<img src="/publics/img/img chien/Chien_terre-neuve_01.jpg" alt="chien noir"/>
+
+</body>
+</html>
