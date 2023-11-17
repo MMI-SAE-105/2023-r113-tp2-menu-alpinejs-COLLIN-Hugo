@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test menu</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+      class="header_menuBtn">menu</button>
+      
+      <h1>Accueil des chiens</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <li><a href="cats/indexchat.html">Accueil des chats</a></li>
+          <li><a href="cats/chat1.html">Chat roux</a></li>
+          <li><a href="cats/chat2.html">Chat noir</a></li>
+          <li><a href="chien/Indexchien.html">Accueil des chiens</a></li>
+          <li><a href="chien/chien1.html">Chien noir</a></li>
+          <li><a href="chien/chien2.html">Chien blanc</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<p>Le Chat domestique (Felis catus) est une espèce de mammifères carnivores, de la famille des Félidés.
+     Issu de la domestication du chat sauvage Felis silvestris, il était anciennement considéré 
+     comme une sous-espèce de celui-ci, sous la dénomination Felis silvestris catus.
+</p>
+</body>
+</html>
