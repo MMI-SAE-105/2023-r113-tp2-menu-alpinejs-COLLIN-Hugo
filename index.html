@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- https://emmet.io/ -->
-    <!-- header>h1{Test de menu} -->
     <header>
-      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
-      class="header_menuBtn">menu</button>
-      
-      <h1>Nos animaux de compagnie</h1>
+      <button
+       aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+      class="header_menuBtn"><img src="publics/icones/IcBaselineMenu.svg" alt="icone menu">
+    </button>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
         <ul>
           <li><a href="cats/index.html">Accueil des chats</a></li>
@@ -26,6 +24,7 @@
           <li><a href="chien/chien2.html">Chien blanc</a></li>
         </ul>
       </nav>
+      <h1>Nos animaux de compagnie</h1>
     </header>
 
 <section>
@@ -41,7 +40,7 @@
     <button type="button">En savoir plus</button>
   </a>
 </section>
-
+<br>
 <section>
       <h2> <img src="publics/icones/NotoDogFace.svg" alt="icone chien"> Les chiens</h2>
       <p>
