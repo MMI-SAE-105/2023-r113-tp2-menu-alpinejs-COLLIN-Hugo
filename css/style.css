@@ -4,10 +4,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #816464;
+  background: #779fef;
   display: grid;
   place-content: center;
 }
+
 
 .header_menuBtn{
   position: relative;
@@ -34,5 +35,15 @@ h1 {
   font-family: 'Agbalumo', cursive;
 }
 body {
+  font-size: 1,5vw;
+}
+h1 {
   font-size: 3vw;
+}
+h2 {
+  font-size: 2vw;
+}
+header {
+  display: flex;
+justify-content: space-between;
 }
