@@ -34,15 +34,6 @@ body {
 h1 {
   font-family: 'Agbalumo', cursive;
 }
-body {
-  font-size: 1,5vw;
-}
-h1 {
-  font-size: 4vw;
-}
-h2 {
-  font-size: 2vw;
-}
 header {
   display: flex;
 justify-content: space-between;
