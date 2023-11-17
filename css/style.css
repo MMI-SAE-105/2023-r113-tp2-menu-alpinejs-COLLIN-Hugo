@@ -26,6 +26,10 @@ h2 {
 body {
   background-color: rgb(196, 196, 196);
 }
-.bouton-1 {
-  background-color: green;
+body {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5;
+}
+h1 {
+  font-family: 'Agbalumo', cursive;
 }
