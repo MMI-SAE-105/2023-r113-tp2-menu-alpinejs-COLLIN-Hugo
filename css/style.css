@@ -17,10 +17,15 @@
 .noscroll body {
   overflow: hidden;
 }
-h1
-{
-  color: pink;
+h1 {
+  color: black;
+}
+h2 {
+  color: white;
 }
 body {
   background-color: rgb(196, 196, 196);
+}
+.bouton-1 {
+  background-color: green;
 }
