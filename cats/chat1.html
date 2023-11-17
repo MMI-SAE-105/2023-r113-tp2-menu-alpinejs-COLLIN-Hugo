@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test menu</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+      class="header_menuBtn">menu</button>
+      
+      <h1>Les chats roux</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <li><a href="cats/indexchat.html">Accueil des chats</a></li>
+          <li><a href="cats/chat1.html">Chat roux</a></li>
+          <li><a href="cats/chat2.html">Chat noir</a></li>
+          <li><a href="chien/Indexchien.html">Accueil des chiens</a></li>
+          <li><a href="chien/chien1.html">Chien noir</a></li>
+          <li><a href="chien/chien2.html">Chien blanc</a></li>
+        </ul>
+      </nav>
+    </header>
 
+<p>On qualifie de roux un poil dont la couleur va du sable (c'est-à-dire jaune foncé) à l'orange-brun. 
+Il s'agit de l'une des trois couleurs non diluées possibles chez le chat, avec le noir et le blanc. 
+Elle peut toutefois aussi être diluée, et le résultat correspondant est la couleur crème.
+</p>
+<img src="/publics/img/img chat/Roux.jpeg" alt="chat roux"/>
+<br>
+<img src="/publics/img/img chat/Chat_roux,_France.jpg" alt="chat roux"/>
+
+</body>
+</html>
