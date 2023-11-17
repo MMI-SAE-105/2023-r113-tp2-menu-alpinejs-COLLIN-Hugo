@@ -33,3 +33,6 @@ body {
 h1 {
   font-family: 'Agbalumo', cursive;
 }
+body {
+  font-size: 3vw;
+}
