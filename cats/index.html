@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test menu</title>
+    <title>Les animaux de compagnie</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
-      class="header_menuBtn">menu</button>
-      
-      <h1>Accueil des Chats</h1>
-      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
-        <ul>
-          <li><a href="cats/indexchat.html">Accueil des chats</a></li>
-          <li><a href="cats/chat1.html">Chat roux</a></li>
-          <li><a href="cats/chat2.html">Chat noir</a></li>
-          <li><a href="chien/Indexchien.html">Accueil des chiens</a></li>
-          <li><a href="chien/chien1.html">Chien noir</a></li>
-          <li><a href="chien/chien2.html">Chien blanc</a></li>
-        </ul>
-      </nav>
-    </header>
+<header>
+      <a href="/index.html">
+        <button type="button"><img src="/publics/icones/MaterialSymbolsHomeOutlineRounded.svg" alt="Accueil">
+        </button>
+      </a>
+        <button
+         aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header_menuBtn"><img src="/publics/icones/IcBaselineMenu.svg" alt="icone menu">
+      </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
+          <ul>
+            <li><a href="/cats/index.html">Accueil des chats</a></li>
+            <li><a href="/cats/chat1.html">Chat roux</a></li>
+            <li><a href="/cats/chat2.html">Chat noir</a></li>
+            <li><a href="/chien/Index.html">Accueil des chiens</a></li>
+            <li><a href="/chien/chien1.html">Chien noir</a></li>
+            <li><a href="/chien/chien2.html">Chien blanc</a></li>
+          </ul>
+        </nav>
+        <h1>L'accueil des chats</h1>
+</header>
 
 <p>Le Chat domestique (Felis catus) est une espèce de mammifères carnivores, de la famille des Félidés.
      Issu de la domestication du chat sauvage Felis silvestris, il était anciennement considéré 
