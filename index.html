@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Les animaux de compagnie</title>
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-    <a href="index.html">
-      <button type="button"><img src="publics/icones/MaterialSymbolsHomeOutlineRounded.svg" alt="Accueil">
-      </button>
-    </a>
-      <button
-       aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
-      class="header_menuBtn"><img src="publics/icones/IcBaselineMenu.svg" alt="icone menu">
-    </button>
-      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
-        <ul>
-          <li><a href="cats/index.html">Accueil des chats</a></li>
-          <li><a href="cats/chat1.html">Chat roux</a></li>
-          <li><a href="cats/chat2.html">Chat noir</a></li>
-          <li><a href="chien/Index.html">Accueil des chiens</a></li>
-          <li><a href="chien/chien1.html">Chien noir</a></li>
-          <li><a href="chien/chien2.html">Chien blanc</a></li>
-        </ul>
-      </nav>
-    </header>
+    <html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Les animaux de compagnie</title>
+      <script defer src="https://unpkg.com/alpinejs"></script>
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <ul>
+        <li><a href="index.html">
+          <button type="button"><img src="publics/icones/MaterialSymbolsHomeOutlineRounded.svg" alt="Accueil"></button></a></li>
+        <li><a href="/cats/index.html">Accueil chat <hr></a></li>
+        <li><a href="/chien/Index.html">Accueil chien <hr></a></li>
+        <li><a href="/cats/chat1.html">Les chats roux <hr></a></li>
+        <li><a href="/cats/chat2.html">Les chats noirs <hr></a></li>
+        <li><a href="/chien/chien2.html">Les chiens blancs <hr></a></li>
+        <li><a href="/chien/chien1.html">Les chiens noirs <hr></a></li>
+        <li><a>     
+     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+          <img src="publics/icones/IcBaselineMenu.svg" alt="icone menu">
+     </button>
+         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
+           <ul-1>
+             <li><a href="cats/index.html">Accueil des chats</a></li>
+             <li><a href="cats/chat1.html">Les chats roux</a></li>
+             <li><a href="cats/chat2.html">Les chats noirs</a></li>
+             <li><a href="chien/Index.html">Accueil des chiens</a></li>
+             <li><a href="chien/chien1.html">Les chiens noirs</a></li>
+             <li><a href="chien/chien2.html">Les chiens blancs</a></li>
+           </ul-1>
+         </nav></a></li>
+      </ul>
+      
 <h1>Nos animaux de compagnie</h1>
 <section>
     <h2> <img src="publics/icones/FxemojiCatside.svg" alt="icone chat"> Les chats</h2>
@@ -51,7 +56,7 @@
         un mammifère de la famille des Canidés (Canidae), laquelle comprend également le dingo, 
         chien domestique retourné à l'état sauvage.
       </p>
-      <img src="publics/img/img chien/20160303_-_Canis_lupus_familiaris_2.jpg" alt="chien couché"/>
+      <img src="publics/img/img chien/20160303_-_Canis_lupus_familiaris_2.jpg" alt="chien couché" style= "height"= 200;/>
       <br>
     <a href="chien/Index.html">
         <button type="button">En savoir plus</button>
