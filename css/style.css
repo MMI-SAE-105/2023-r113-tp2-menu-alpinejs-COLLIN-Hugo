@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #779fef;
+  background: #333;
   display: grid;
   place-content: center;
 }
