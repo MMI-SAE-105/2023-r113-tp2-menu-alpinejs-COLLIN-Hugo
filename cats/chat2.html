@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Les animaux de compagnie</title>
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
-<header>
-        <a href="/index.html">
-          <button type="button"><img src="/publics/icones/MaterialSymbolsHomeOutlineRounded.svg" alt="Accueil">
-          </button>
-        </a>
-          <button
-           aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
-          class="header_menuBtn"><img src="/publics/icones/IcBaselineMenu.svg" alt="icone menu">
-        </button>
-          <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
-            <ul>
-              <li><a href="/cats/index.html">Accueil des chats</a></li>
-              <li><a href="/cats/chat1.html">Chat roux</a></li>
-              <li><a href="/cats/chat2.html">Chat noir</a></li>
-              <li><a href="/chien/Index.html">Accueil des chiens</a></li>
-              <li><a href="/chien/chien1.html">Chien noir</a></li>
-              <li><a href="/chien/chien2.html">Chien blanc</a></li>
-            </ul>
-          </nav>
-          
-  </header>
+    <html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Les animaux de compagnie</title>
+      <script defer src="https://unpkg.com/alpinejs"></script>
+      <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+
+<ul>
+        <li-1><a href="/index.html">
+          <button type="button"><img src="/publics/icones/MaterialSymbolsHomeOutlineRounded.svg" alt="Accueil"></button></a></li-1>
+        <li><a href="/cats/index.html">Accueil chat <hr></a></li>
+        <li><a href="/chien/Index.html">Accueil chien <hr></a></li>
+        <li><a href="/cats/chat1.html">Les chats roux <hr></a></li>
+        <li><a href="/cats/chat2.html">Les chats noirs <hr></a></li>
+        <li><a href="/chien/chien2.html">Les chiens blancs <hr></a></li>
+        <li><a href="/chien/chien1.html">Les chiens noirs <hr></a></li>
+        <li-2><a>     
+     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+          <img src="/publics/icones/IcBaselineMenu.svg" alt="icone menu">
+     </button>
+         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" style="display : none">
+           <ul-1>
+             <li><a href="/cats/index.html">Accueil des chats</a></li>
+             <li><a href="/cats/chat1.html">Les chats roux</a></li>
+             <li><a href="/cats/chat2.html">Les chats noirs</a></li>
+             <li><a href="/chien/Index.html">Accueil des chiens</a></li>
+             <li><a href="/chien/chien1.html">Les chiens noirs</a></li>
+             <li><a href="/chien/chien2.html">Les chiens blancs</a></li>
+           </ul-1>
+         </nav></a></li-2>
+ </ul>
   <h1>Les chats noirs</h1>
 <p>La signification de la superstition du chat noir reste assez obscure. Pour autant, il est de coutume de dire, 
     dans la culture contemporaine française, que croiser un chat noir porte malheur. Certaines coutumes y voient quant à elle un 
