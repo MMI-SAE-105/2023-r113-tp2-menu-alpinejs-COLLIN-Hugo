@@ -34,10 +34,6 @@ body {
 h1 {
   font-family: 'Agbalumo', cursive;
 }
-header {
-  display: flex;
-justify-content: space-between;
-}
 img {
   border-radius: 10px;
 }
